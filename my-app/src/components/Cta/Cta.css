@@ -1,0 +1,41 @@
+.cta-wrapper{
+    background: var(--gradient);
+  }
+
+  .cta-container{
+    width: 597px;
+    text-align: center;
+  }
+  
+  .cta-title{
+    color: #000;
+    margin: 150px auto 82px;
+  }
+
+  .cta-buttons{
+    background: none;
+    margin-bottom: 150px;
+  }
+
+  .cta-buttons>button{
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 798px){
+    .cta-container{
+      width: 80%;
+    }
+
+    .cta-buttons{
+      margin-bottom: 70px;
+    }
+
+    .cta-buttons>button{
+      margin: 0 0.5rem;
+    }
+
+    .cta-title{
+      margin: 80px auto 40px;
+    }
+  
+  }
