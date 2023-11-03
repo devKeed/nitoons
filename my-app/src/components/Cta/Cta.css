@@ -1,0 +1,42 @@
+.cta-wrapper{
+    background: var(--gradient);
+  }
+
+  .cta-container{
+    max-width: 768px;
+    width: 70%;
+    text-align: center;
+    margin: 150px 0;
+  }
+  
+  .cta-title{
+    color: #000;
+    margin-bottom: 4rem;
+  }
+
+  .cta-buttons{
+    display: flex;
+    overflow: hidden;
+    gap: 2rem;
+  }
+
+  @media (max-width: 798px){
+    .cta-container{
+      width: 80% !important;
+    }
+  }
+
+  @media (max-width: 515px){
+    .cta-container{
+      margin: 80px 0;
+    }
+
+    .cta-buttons{
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .cta-title{
+      margin-bottom: 2.5rem;
+    }
+  }
