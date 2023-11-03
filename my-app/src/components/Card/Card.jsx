@@ -8,7 +8,8 @@ const Card = () => {
 
   
   return (
-    <section className="card-wrapper margins paddings">
+    <div className="card-section">
+      <section className="card-wrapper margins paddings">
       <div className="card-container flexCenter margins">
 
         
@@ -22,11 +23,12 @@ const Card = () => {
           }}
           className="card-title textSubTitle"
         >
-          Research and development constitute the cornerstone of our endeavours.
+          Some of our products are
         </motion.div>
       </div>
       <CardSlider />
     </section>
+    </div>
   );
 };
 

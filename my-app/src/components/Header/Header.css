@@ -1,28 +1,109 @@
 
-.header-wrapper{
+.header-wrapper {
   background: #000;
 }
 
 .header-container {
   max-width: 1500px;
   width: 100%;
+  margin: 0 auto;
+  padding: 1rem !important;
 }
 
-.header-menu {
-  gap: 2rem;
+.header-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
 }
 
-.header-menu>a:hover{
-  color: lightgrey;
-  transform: scale(1.01);
+.header-menu li {
+  margin-right: 20px;
 }
 
-.header-menu > a {
+.header-menu a {
+  color: white;
   font-size: 18px;
   font-weight: 400;
-  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  transition: color 300ms ease-in-out;
+  background: transparent;
 }
 
-.header-socials>img{
-  transform: scale(1.01);
+.header-menu a:hover {
+  color: var(--pink); 
+  text-decoration: none; 
+  transform: scale(1.05);
+}
+
+/* Header Social Icons Styles */
+.header-socials {
+  display: flex;
+  align-items: center;
+}
+
+.header-socials img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  transition: transform 300ms ease-in-out;
+}
+
+.header-socials img:hover {
+  transform: scale(1.15);
+}
+
+.header-container .navbar-toggler:hover {
+  background: #2e294e;
+  color: var(--pink);
+}
+
+.header-container .navbar-toggler {
+  color: var(--pink);
+}
+
+@media (max-width: 920px){
+  .header-menu li {
+    margin-right: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+
+  .header-menu a:hover {
+    background: #2e294e; /* Background color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  .header-menu {
+    text-align: center;
+  }
+  
+  .header-menu ul {
+    flex-direction: column;
+  }
+  
+  .header-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .header-socials {
+    justify-content: center; /* Arrange social icons in a horizontal line */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header-socials img:hover {
+    background: #2e294e;
+  }
 }

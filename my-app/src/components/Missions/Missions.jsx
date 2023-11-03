@@ -1,38 +1,77 @@
 import React from "react";
 import "./Missions.css";
-import "../../../public/output.css";
 
 import { Carousel } from "flowbite-react";
 
 export default function Missions() {
   return (
-    <section id="about-us" className="flexCenter margins">
-      <Carousel>
+    <section id="missions" className="flexCenter">
+      <Carousel pauseOnHover slideInterval={2000}>
+        <div className="missions flex h-full items-center justify-center relative">
+          <section className="about-us-wrapper flexCenter margins">
+            <div className="about-us-container">
+              <div className="about-us-right">
+                <div className="about-us-image flexCenter">
+                  <video autoPlay loop muted width="100%" height="auto">
+                    <source src="./videos/gather.mov" />
+                  </video>
+                </div>
+              </div>
+
+              <div className="about-us-left paddings">
+                <h1 className="textSubTitle about-us-title">
+                  AI enhanced visual research.
+                </h1>
+                <p className="textSmallParagraph topSpace about-us-description">
+                  We live in an era where Artificial Intelligence is
+                  revolutionizing industries, and animation is no exception. At
+                  Nitoons, we leverage the latest advancements in Artificial
+                  Intelligence and Deep leaning technologies to create
+                  animations that are not only visually stunning but also deeply
+                  engaging.
+                </p>
+                <div className="about-us-button">
+                  <button className="nitoonColorButton topSpace">
+                    <a
+                      href="mailto:support@pledre.com?subject=Your%20Subject%20Here"
+                      className="textParagraph"
+                    >
+                      Contact us
+                    </a>
+                    <img src="images\heroicons-solid_arrow-left.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
         <div className="flex h-full items-center justify-center relative">
           <section className="about-us-wrapper flexCenter margins">
             <div className="about-us-container">
               <div className="about-us-right">
                 <div className="about-us-image flexCenter">
-                  <img src="https://i.pinimg.com/736x/28/22/f5/2822f5e015a71e83a18f183293cfae83.jpg" alt="visit image" />
+                  <video autoPlay loop muted width="100%" height="auto">
+                    <source src="./videos/1103.mov" />
+                  </video>
                 </div>
               </div>
 
               <div className="about-us-left paddings">
-                <h1 className="textSubTitle about-us-title">
-                  We're delving into the exciting world of AI-enhanced visual
-                  research.
-                </h1>
+                <h1 className="textSubTitle about-us-title">Imagine Beyond</h1>
                 <p className="textSmallParagraph topSpace about-us-description">
-                  We live in an era where Artificial Intelligence is
-                  revolutionizing industries, and animation is no exception. At
-                  Nitoons, we leverage the latest advancements in Artificial
-                  Intelligence and Deep leaning technologies to create
-                  animations that are not only visually stunning but also deeply
-                  engaging.
+                  Our goal is to give creatives and animators ai enabled
+                  products so that they can bring their dreams to life.
                 </p>
                 <div className="about-us-button">
-                  <button className="nitoonWhiteButton topSpace">
-                    Contact us
+                  <button className="nitoonColorButton topSpace">
+                    <a
+                      href="mailto:support@pledre.com?subject=Your%20Subject%20Here"
+                      className="textParagraph"
+                    >
+                      Contact us
+                    </a>
+                    <img src="images\heroicons-solid_arrow-left.png" alt="" />
                   </button>
                 </div>
               </div>
@@ -42,61 +81,33 @@ export default function Missions() {
 
         <div className="flex h-full items-center justify-center relative">
           <section className="about-us-wrapper flexCenter margins">
-            <div className="about-us-container ">
-              <div className="about-us-right paddings">
+            <div className="about-us-container">
+              <div className="about-us-right">
                 <div className="about-us-image flexCenter">
-                  <img src="https://i.pinimg.com/564x/de/55/26/de5526c987b5a124fc4fc4120bc30c99.jpg" />
+                  <video autoPlay loop muted width="100%" height="auto">
+                    <source src="./videos/bike.mov" />
+                  </video>
                 </div>
               </div>
 
               <div className="about-us-left paddings">
                 <h1 className="textSubTitle about-us-title">
-                  We're delving into the exciting world of AI-enhanced visual
-                  research.
+                  Crafting Stories with Data
                 </h1>
                 <p className="textSmallParagraph topSpace about-us-description">
-                  We live in an era where Artificial Intelligence is
-                  revolutionizing industries, and animation is no exception. At
-                  Nitoons, we leverage the latest advancements in Artificial
-                  Intelligence and Deep leaning technologies to create
-                  animations that are not only visually stunning but also deeply
-                  engaging.
+                  At Nitoons, we believe inside it, waiting to come to life. We
+                  mix the skills of understanding data with the fun of making
+                  cartoons to create stories that really connect with you.
                 </p>
                 <div className="about-us-button">
-                  <button className="nitoonWhiteButton topSpace">
-                    Contact us
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div className="flex h-full items-center justify-center relative">
-          <section className="about-us-wrapper flexCenter margins">
-            <div className="about-us-container ">
-              <div className="about-us-right paddings">
-                <div className="about-us-image flexCenter">
-                  <img src="https://i.pinimg.com/564x/44/f6/3b/44f63b62e307fdca66c14e65724f37a4.jpg" />
-                </div>
-              </div>
-
-              <div className="about-us-left paddings">
-                <h1 className="textSubTitle about-us-title">
-                  We're delving into the exciting world of AI-enhanced visual
-                  research.
-                </h1>
-                <p className="textSmallParagraph topSpace about-us-description">
-                  We live in an era where Artificial Intelligence is
-                  revolutionizing industries, and animation is no exception. At
-                  Nitoons, we leverage the latest advancements in Artificial
-                  Intelligence and Deep leaning technologies to create
-                  animations that are not only visually stunning but also deeply
-                  engaging.
-                </p>
-                <div className="about-us-button">
-                  <button className="nitoonWhiteButton topSpace">
-                    Contact us
+                  <button className="nitoonColorButton topSpace">
+                    <a
+                      href="mailto:support@pledre.com?subject=Your%20Subject%20Here"
+                      className="textParagraph"
+                    >
+                      Contact us
+                    </a>
+                    <img src="images\heroicons-solid_arrow-left.png" alt="" />
                   </button>
                 </div>
               </div>

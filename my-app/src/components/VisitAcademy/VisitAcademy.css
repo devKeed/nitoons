@@ -1,9 +1,10 @@
 
 
 .visit-academy-container {
-  width: 75%;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  max-width: 1500px;
   gap: 7%;
 }
 
@@ -71,10 +72,20 @@
   }
 }
 
+@media (max-width: 610px){
+  .image-container{
+    border-radius: 1rem;
+  }
+}
+
 
 @media (max-width: 508px){
   .image-container{
     width: 320px;
+  }
+
+  .visit-academy-left{
+    width: 100%;
   }
 }
 

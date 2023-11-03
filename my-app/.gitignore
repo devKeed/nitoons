@@ -1,3 +1,10 @@
+images/
+
+# Ignore Node.js modules
+node_modules/
+
+
+
 # Logs
 logs
 *.log

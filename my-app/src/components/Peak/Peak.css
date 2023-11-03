@@ -1,0 +1,13 @@
+.peak-wrapper{
+    max-width: 1500px;
+    gap: 7%;
+    margin-bottom: 4rem;
+}
+
+.peak-gif{
+    width: 650px;
+}
+
+.peak-right > h2, p{
+    width: 80%;
+}

@@ -8,15 +8,16 @@ import { cardItems } from "./CardItems";
 export default class AutoPlay extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 5000,
-      autoplaySpeed: 1000,
+      speed: 8000,
+      autoplaySpeed: 500,
       cssEase: "linear",
       initialSlide: 0,
+      pauseOnHover: true,
       responsive: [
         {
           breakpoint: 1200,
@@ -30,7 +31,7 @@ export default class AutoPlay extends Component {
         {
           breakpoint: 1098,
           settings: {
-            slidesToShow: 2.5,
+            slidesToShow: 2.3,
             slidesToScroll: 3,
             infinite: true,
             dots: true
@@ -39,15 +40,15 @@ export default class AutoPlay extends Component {
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 2.1,
+            slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 2
           }
         },
         {
-          breakpoint: 770,
+          breakpoint: 768,
           settings: {
-            slidesToShow: 1.3,
+            slidesToShow: 1.5,
             slidesToScroll: 1,
             initialSlide: 2
           }
@@ -69,18 +70,18 @@ export default class AutoPlay extends Component {
               <div>
                 <section
                 key={id}
-                className="box-wrapper flexCenter innerwidth paddings"
+                className="box-wrapper flexCenter "
               >
                 <div
-                  className="box-container paddings innerwidth"
+                  className="box-container innerwidth"
                   style={{ border: `1px solid ${cardItem.color}` }}
                 >
                   <div>
                     <div className="box-top flexColStart">
-                      <div className="textSmallParagraph card-subTitle">
+                      <div className="textParagraph box-title">
                         {cardItem.title}
                       </div>
-                      <div className="textVerySmallParagraph box-description">
+                      <div className="textSmallParagraph box-description">
                         {cardItem.description}
                       </div>
                     </div>
@@ -90,8 +91,8 @@ export default class AutoPlay extends Component {
                     <img className="card-image" src={cardItem.image} alt="" />
 
                     <div className="box-learn">
-                      <a className="flexEnd" href="">
-                        <div className="learn-more">Learn more</div>
+                      <a className="flexEnd" href="#visit-academy">
+                        <div className="learn-more textSmallParagraph">Learn more</div>
                         <svg
                           width="24"
                           height="24"
